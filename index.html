@@ -5,9 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark-style-ken</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
+<style type="text/tailwindcss">
+    @theme {
+      --color-clifford: #da373d;
+    }
+  </style>
 
 <body>
+
+    <header class="flex px-6 bg-red-600 justify-between">
+        <div class="flex gap-2 items-center bg-green-600">
+            <img src="./asset/image/Group.svg" alt="">
+            <h6>znisa</h6>
+        </div>
+
+        <nav class="hidden md:flex bg-green-200">
+            <div class="bg-red-900">
+                <img src="./asset/image/Home Icom.svg" alt="">
+            </div>
+            <ul class="flex gap-12">
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact me</li>
+            </ul>
+        </nav>
+        <div class="hidden md:flex">
+            <button>Hire me</button>
+            <button><img src="./asset/image/User Rounded.svg" alt=""></button>
+        </div>
+
+        <div class="md:hidden flex w-8">
+           <button> <img src="./asset/image/Vector.svg" alt=""></button>
+        </div>
+    </header>
+
+    <div></div>
 
 </body>
 
