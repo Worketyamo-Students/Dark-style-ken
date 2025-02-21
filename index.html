@@ -42,8 +42,8 @@
     </header>
 
     <!-- frist steep -->
-    <section class="flex flex-col w-full h-full  pt-8">
-        <div class="flex  w-full h-14  justify-center ">
+    <section class="md:flex flex-col w-full h-full  pt-8">
+        <div class="flex w-full h-12 md:flex  w-full h-14  justify-center ">
 
             <div class="flex w-30 h6 border-1"></div>
             <div class="flex w-30 h6 border-1"></div>
@@ -54,11 +54,11 @@
 
         </div>
 
-        <section class="flex justify-center">
+        <section class="flex justify-center md:flex justify-center">
 
-            <div class="flex justify-center w-full px-6">
+            <div class="flex w-full md:flex justify-center w-full px-6">
 
-                <div class="flex flex-col">
+                <div class="hidden md:block flex flex-col">
                     <div class="flex flex-col h-46 w-full ">
                         <div class="flex w-30 h-46 border-1"></div>
                         <div class="flex w-30 h-46 border-1"></div>
@@ -67,7 +67,7 @@
                 </div>
 
 
-                <div class="flex w-120 h-46 border-1">
+                <div class="flex w-150 md:flex md:flex w-120 h-46 border-1">
                     <div class="flex flex-col justify-center items-center text-center">
                         <div class="text-center">
                             <h3>I design and build clean websites</h3>
@@ -78,16 +78,18 @@
                                 targeting etc.</p>
                         </div>
 
+                        <div>
+                            <button>
+                                <h4>Hire me</h4>
+                            </button>
+                        </div>
+
                     </div>
-                    <div>
-                        <button>
-                            <h4>Hire me</h4>
-                        </button>
-                    </div>
+                   
                 </div>
 
 
-                <div class="flex flex-col">
+                <div class="hidden md:block flex flex-col">
                     <div class="flex flex-col h-46 w-full">
                         <div class="flex w-30 h-46 border-1"></div>
                         <div class="flex w-30 h-46 border-1"></div>
@@ -131,19 +133,19 @@
 
         </div>
 
-        <hr class="flex w-full border-1">
-        <div class="flex justify-center items-center gap-12">
+        <hr class="md:flex w-full border-1">
+        <div class="flex gap-2 md:flex justify-center items-center gap-12">
             <h3>Framer</h3>
             <h3>*</h3>
             <h3>Webflow</h3>
             <h3>*</h3>
             <h3>Figma</h3>
             <h3>*</h3>
-            <h3>Notion</h3>
-            <h3>*</h3>
+            <h3 class="hidden md:block flex">Notion</h3>
+            <h3 class="hidden md:block flex">*</h3>
         </div>
 
-        <hr class="flex w-full border-1">
+        <hr class="md:flex w-full border-1">
 
     </section>
 
