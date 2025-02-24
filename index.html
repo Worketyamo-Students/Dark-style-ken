@@ -10,30 +10,41 @@
 <style type="text/tailwindcss">
     @theme {
       --color-clifford: #da373d;
-    }
+      --color-lb: #7A87FB;
+      --color-my-br: #FFD49C;
+      --color-nav: #1C1C1C;
+      --color-body: #101111;
+      --color-whi: #FFFFFF;
+      --color-white: #FFFFFF33;
+      --color-back: #878787;
+
+        }
   </style>
 
-<body class="flex flex-col bg-sky-600">
+<body class="flex flex-col ">
 
     <header class="flex px-6 bg-red-600 justify-between">
         <div class="flex gap-2 items-center bg-green-600">
-            <img src="./asset/image/Group.svg" alt="">
-            <h6>znisa</h6>
+            <img src="./asset/image/Group.svg" alt="" class="w-8">
+            <h6 class="text-xs text-whi">znisa</h6>
+        </div>
+        <div class="p-[1.5px] bg-gradient-to-r from-my-br to-lb rounded-full w-70">
+            <nav class="hidden md:block h-full md:flex justify-center items-center gap-4 bg-nav rounded-full">
+                <div class="">
+                    <img src="./asset/image/Home Icom.svg" alt="" class="w-4">
+                </div>
+                <ul class="flex gap-8 text-xs text-whi">
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact me</li>
+                </ul>
+            </nav>
         </div>
 
-        <nav class="hidden md:flex bg-green-200">
-            <div class="bg-red-900">
-                <img src="./asset/image/Home Icom.svg" alt="">
-            </div>
-            <ul class="flex gap-12">
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact me</li>
-            </ul>
-        </nav>
         <div class="hidden md:flex">
-            <button>Hire me</button>
-            <button><img src="./asset/image/User Rounded.svg" alt=""></button>
+            <button class="bg-gradient-to-r from-lb to-my-br w-16 rounded-full text-xs">Hire me</button>
+            <button><img src="./asset/image/User Rounded.svg" alt=""
+                    class="bg-gradient-to-r from-lb to-my-br w-5 rounded-full"></button>
         </div>
 
         <div class="md:hidden flex w-8">
@@ -42,15 +53,15 @@
     </header>
 
     <!-- frist steep -->
-    <section class="md:flex flex-col w-full h-full  pt-8">
-        <div class="flex w-full h-12 md:flex  w-full h-14  justify-center ">
+    <section class="md:flex flex-col w-full h-full  mt-8">
+        <div class="flex w-full h-12 md:flex  w-full h-14 justify-center text-white">
 
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
+            <div class="flex w-30 h6 border-1 bg-body "></div>
+            <div class="flex w-30 h6 border-1 bg-body "></div>
+            <div class="flex w-30 h6 border-1 bg-body "></div>
+            <div class="flex w-30 h6 border-1 bg-body "></div>
+            <div class="flex w-30 h6 border-1 bg-body  rounded-br-lg"></div>
+            <div class="flex w-30 h6 border-1 bg-body  rounded-bl-lg"></div>
 
         </div>
 
@@ -58,22 +69,24 @@
 
             <div class="flex w-full md:flex justify-center w-full ">
 
-                <div class="hidden md:block flex flex-col">
-                    <div class="flex flex-col h-46 w-full ">
-                        <div class="flex w-30 h-46 border-1"></div>
-                        <div class="flex w-30 h-46 border-1"></div>
-                        <div class="flex w-30 h-46 border-1"></div>
+                <div class="hidden md:block flex flex-col text-white">
+                    <div class="flex flex-col h-46 w-full bg-body  ">
+                        <div class="flex w-30 h-46 border-1 bg-body "></div>
+                        <div class="flex w-30 h-46 border-1 bg-body "></div>
+                        <div class="flex w-30 h-46 border-1 bg-body "></div>
                     </div>
                 </div>
 
 
-                <div class="flex w-full md:flex md:flex md:w-120 h-46 border-1">
-                    <div class="flex justify-center md:flex flex-col justify-center items-center text-center">
-                        <div class="text-center">
+                <div class="flex w-full md:flex md:flex md:w-120 h-46 border-1 rounded-tr-lg bg-body ">
+                    <div
+                        class="w-full flex justify-center md:flex flex-col md:justify-center items-center text-center gap-2">
+                        <div class="text-center text-whi text-2xl">
                             <h3>I design and build clean websites</h3>
                         </div>
                         <div>
-                            <p class="flex justify-center text-center ">Write anything here something about yourself to
+                            <p class="flex justify-center text-center text-whi text-xs">Write anything here something
+                                about yourself to
                                 <br> showcase what actually you doing
                                 or
                                 targeting etc.
@@ -82,7 +95,7 @@
 
                         <div>
                             <button>
-                                <h4>Hire me</h4>
+                                <h4 class="bg-gradient-to-r from-lb to-my-br w-16 rounded-full text-xs">Hire me</h4>
                             </button>
                         </div>
 
@@ -91,47 +104,47 @@
                 </div>
 
 
-                <div class="hidden md:block flex flex-col">
+                <div class="hidden md:block flex flex-col text-white">
                     <div class="flex flex-col h-46 w-full">
-                        <div class="flex w-30 h-46 border-1"></div>
-                        <div class="flex w-30 h-46 border-1"></div>
-                        <div class="flex w-30 h-46 border-1"></div>
+                        <div class="flex w-30 h-46 border-1 bg-body rounded-tl-lg"></div>
+                        <div class="flex w-30 h-46 border-1 bg-body"></div>
+                        <div class="flex w-30 h-46 border-1 bg-body"></div>
                     </div>
                 </div>
             </div>
 
         </section>
 
-        <div class="flex md:flex w-full h-14 justify-center">
+        <div class="flex md:flex w-full h-14 justify-center text-white">
 
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-
-        </div>
-
-        <div class="flex w md: flex w-full h-14 justify-center">
-
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
+            <div class="flex w-30 h6 border-1 bg-body "></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
 
         </div>
 
-        <div class=" flex w-full h-14 justify-center">
+        <div class="flex w md: flex w-full h-14 justify-center text-white">
 
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
-            <div class="flex w-30 h6 border-1"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+
+        </div>
+
+        <div class=" flex w-full h-14 justify-center text-white">
+
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
+            <div class="flex w-30 h6 border-1 bg-body"></div>
 
         </div>
 
@@ -226,7 +239,7 @@
 
     <section class="flex px-46  ml-18 pt-">
         <div class="flex justify-center items-center gap-12">
-            <div class="flex box-border border-1 bg-green-200 w-80 h-80"></div>
+            <div class="flex box-border bg-gradient-to-r from-lb to-my-br w-70 h-60"></div>
 
             <div>
                 <div class="flex w-8 h-8  bg-green-600 border-1 rounded-full justify-center items-center">
@@ -240,7 +253,7 @@
 
     <section class="flex px-46  ml-18 pt-26">
         <div class="flex justify-center items-center gap-12">
-            <div class="flex box-border border-1 bg-green-200 w-80 h-80"></div>
+            <div class="flex box-border bg-gradient-to-r from-lb to-my-br w-70 h-60"></div>
 
             <div>
                 <div class="flex w-8 h-8  bg-green-600 border-1 rounded-full justify-center items-center">
@@ -254,10 +267,11 @@
 
     <section class="flex px-46  ml-18 pt-26">
         <div class="flex justify-center items-center gap-12">
-            <div class="flex box-border border-1 bg-green-200 w-80 h-80"></div>
+            <div class="flex box-border bg-gradient-to-r from-lb to-my-br w-70 h-60"></div>
 
             <div>
-                <div class="flex w-8 h-8  bg-green-600 border-1 rounded-full justify-center items-center">
+                <div
+                    class="flex w-8 h-8 border-1 rounded-full justify-center items-center bg-gradient-to-r from-lb to-my-br">
                     3
                 </div>
 
@@ -268,34 +282,172 @@
 
     </section>
 
-    <div class="flex gap-4 px-46 pt-16">
+    <div class="flex gap-4 px-46 py-16">
         <h2 class="text-lg">Client testimonials</h2>
         <img src="./asset/image/Frame 1597884161.svg" alt="" class="flex w-6">
     </div>
 
+    <!-- <div class="flex px-46"> 
+    
+    <div class="flex flex-col">
+        
 
-    <div class="flex px-46 gap-18">
+    <section class=" bg-white px-46 py-12 ">
+        <div class="flex border-t  border-l rounded-tl-lg w h-20">
+            <div class="flex flex-col gap-2 text-black">
+                <div class="flex ">
+                    <div class="w-6 h-6 bg-back  ml-4 mt-4 rounded-full"></div>
+                    <div class="text-[8px] pl-2 pt-4">
+                        <p>Client Name .</p>
+                        <p>Product designer</p>
+                    </div>
+                    <div class="w-7 h-7 ml-16 pt-4">
+                        <img src="./asset/image/music.svg" alt="">
+
+                    </div>
+                </div>
+                <div class="text-[9px] pl-4">
+                    <p>s simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the
+                        <br> industry's standard dummy text ever since the
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" bg-white px-46 py-12 ">
+        <div class="flex border-t  border-l rounded-tl-lg w-52 h-20">
+            <div class="flex flex-col gap-2 text-black">
+                <div class="flex ">
+                    <div class="w-6 h-6 bg-back  ml-4 mt-4 rounded-full"></div>
+                    <div class="text-[8px] pl-2 pt-4">
+                        <p>Client Name .</p>
+                        <p>Product designer</p>
+                    </div>
+                    <div class="w-7 h-7 ml-16 pt-4">
+                        <img src="./asset/image/music.svg" alt="">
+
+                    </div>
+                </div>
+                <div class="text-[9px] pl-4">
+                    <p>s simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the
+                        <br> industry's standard dummy text ever since the
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div>
+        
+
+    <section class=" bg-white px-46 py-12 ">
+        <div class="flex border-t  border-l rounded-tl-lg w-52 h-20">
+            <div class="flex flex-col gap-2 text-black">
+                <div class="flex ">
+                    <div class="w-6 h-6 bg-back  ml-4 mt-4 rounded-full"></div>
+                    <div class="text-[8px] pl-2 pt-4">
+                        <p>Client Name .</p>
+                        <p>Product designer</p>
+                    </div>
+                    <div class="w-7 h-7 ml-16 pt-4">
+                        <img src="./asset/image/music.svg" alt="">
+
+                    </div>
+                </div>
+                <div class="text-[9px] pl-4">
+                    <p>s simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the
+                        <br> industry's standard dummy text ever since the
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" bg-white px-46 py-12 ">
+        <div class="flex border-t  border-l rounded-tl-lg w-52 h-20">
+            <div class="flex flex-col gap-2 text-black">
+                <div class="flex ">
+                    <div class="w-6 h-6 bg-back  ml-4 mt-4 rounded-full"></div>
+                    <div class="text-[8px] pl-2 pt-4">
+                        <p>Client Name .</p>
+                        <p>Product designer</p>
+                    </div>
+                    <div class="w-7 h-7 ml-16 pt-4">
+                        <img src="./asset/image/music.svg" alt="">
+
+                    </div>
+                </div>
+                <div class="text-[9px] pl-4">
+                    <p>s simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the
+                        <br> industry's standard dummy text ever since the
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="flex px-40 ">
         <div class="flex flex-col gap-4">
-            <div class="flex gap-4 pt-16">
-                <h2 class="text-lg">Have idea about project?</h2>
-                <img src="./asset/image/Frame 1597884161.svg" alt="" class="flex w-6">
+            <div class="flex gap-4 pt-16 items-center">
+          <div>      <h2 class="text-[1.]">Have idea about project?</h2></div>
+            <div><img src="./asset/image/Frame 1597884161.svg" alt="" class=" w-6"></div>
             </div>
 
             <div>
-                <p>Write anything here something about yourself to <br> showcase what actually you doing or targeting
+                <p class="text-xs">Write anything here something about yourself to <br> showcase what actually you doing or targeting
                     etc.
                 </p>
             </div>
-            <div>
+            <div class="text-xs">
                 <button>Send us a message</button>
             </div>
         </div>
 
         <div class="w-60 h-50">
-            <img src="./asset/image/Frame 1597884173.svg" alt="">
+            <img src="./asset/image/Frame 1597884173.svg" alt="" class="w-60 h-50">
         </div>
 
     </div>
+
+    <footer class="flex px-46 bg-red-600 justify-between">
+        <div class="flex gap-2 items-center bg-green-600">
+            <img src="./asset/image/Group.svg" alt="">
+            <h6>znisa</h6>
+        </div>
+
+        <nav class="hidden md:flex bg-green-200">
+
+            <div class="flex gap-8">
+                <div><img src="./asset/image/Vector (5).svg" alt=""></div>
+                <div> <img src="./asset/image/Vector (6).svg" alt=""></div>
+                <div><img src="./asset/image/Vector (7).svg" alt=""></div>
+                <div><img src="./asset/image/Vector (4).svg" alt=""></div>
+
+            </div>
+        </nav>
+        <div class="hidden md:flex">
+            <button>Hire me</button>
+            <button><img src="./asset/image/User Rounded.svg" alt=""></button>
+        </div>
+
+        <div class="md:hidden flex w-6">
+            <button> <img src="./asset/image/Vector.svg" alt=""></button>
+        </div>
+
+    </footer> -->
 
 </body>
 
